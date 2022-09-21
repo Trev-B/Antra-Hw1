@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sign-up-form-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    width: 600px;
+}
+
+input { 
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid rgb(104, 176, 233);
+    box-shadow:0 0 10px rgb(104, 176, 233);
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    color: white;
+    border: none;
+    width: 45%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    opacity: .90;
+}
+
+.register {
+    background-color: rgb(66, 139, 202);
+}
+
+.sign-in {
+    background-color: rgb(92, 184, 92);
+    margin-left: 50px;
+}
+
+.terms {
+    font-size: 14px;
+    padding: 10px 0px 2px 0px;
+}
+
+.terms label {
+    font-weight: bold;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.terms a {
+    color: rgb(103, 182, 218);
+}
+
+.terms input {
+    width: 15px;
+    height: 15px;
+}
+
+.terms span {
+    color: white;
+    background-color: rgb(66, 139, 202);
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 450px) {
+    .user-input {
+        flex-direction: column;
+    }
+}
